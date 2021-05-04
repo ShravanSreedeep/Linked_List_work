@@ -301,18 +301,18 @@ void search()
 void display()
 {
      struct node *ptr;  
-    ptr = head;   
+    ptr = head;  
+    printf("\nValue        Present Address       Next Address\n");
     if(ptr == NULL)  
     {  
         printf("Nothing to print");  
     }  
     else  
-    {  
-        printf("\nprinting values . . . . .\n");   
+    {    
         while (ptr!=NULL)  
-        {  
-            printf("\n%d",ptr->data);  
-            ptr = ptr -> next;  
+        {     
+    printf("\n%d           %d              %d\n",ptr->data,ptr,ptr-> next);
+            ptr = ptr -> next; 
         }  
     }  
 }
